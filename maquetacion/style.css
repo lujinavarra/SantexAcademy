@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+/* estilos del header */
+.header {
+    border-bottom: 1px solid gray; 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.35em; 
+    height: 2.86em; 
+    margin: 5px 0;
+}
+img {
+    margin: 0.71em 0;
+}
+.header-right {
+    display: flex; align-items: center;
+}
+p {
+    margin-right: 2em;
+    font-size: 0.47em;
+}
+.redondo {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 3em;
+    font-size: 0.43em;
+    font-weight: 500;
+    margin: 0 10px 10px 0;
+}
+.botonNav{
+    margin-bottom: 0;
+}
+.botonNav:hover,
+.botonContacto:hover{
+    background-color: #201B24;
+    color: white;
+}
+/*estilos del main*/
+.introduction {
+    padding-top: 2.5em; 
+    padding-bottom: 1.78em;
+}
+h1 {
+    margin: 0.36em 12.5em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    width: 20em;
+}
+
+.introduction-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.14em;
+    margin-left: 0.71em;
+    margin-right: 0.71em;
+}
+.botonContacto {
+    color: #201B24; 
+    width: 11em;
+}
+
+.botonSumate{
+    margin-left: 0.5em; 
+    color: #6b53f0; 
+    border:2px solid #6b53f0;
+}
+.botonSumate:hover{
+    background-color: #6b53f0;
+    color: white;
+}
