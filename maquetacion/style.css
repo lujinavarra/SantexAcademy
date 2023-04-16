@@ -5,32 +5,42 @@ body {
 }
 /* estilos del header */
 .header {
-    border-bottom: 1px solid gray; 
     display: flex;
     justify-content: space-between;
     padding: 0 1.35em; 
-    height: 2.86em; 
+    height: auto; 
     margin: 5px 0;
+    flex-wrap: wrap;
 }
 img {
     margin: 0.71em 0;
+    width: 5.4em;
+    height: 1.8em;
 }
 .header-right {
-    display: flex; align-items: center;
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
 }
 p {
     margin-right: 2em;
     font-size: 0.47em;
+}
+p:hover{
+    border-color: #6b53f0;
+    color:#6b53f0;
 }
 .redondo {
     background-color: white;
     border: 2px solid black;
     border-radius: 20px;
     padding: 10px 20px;
-    height: 3em;
+    height: auto;
+    width: auto;
     font-size: 0.43em;
     font-weight: 500;
     margin: 0 10px 10px 0;
+    letter-spacing: 0.18px;
 }
 .botonNav{
     margin-bottom: 0;
@@ -40,18 +50,31 @@ p {
     background-color: #201B24;
     color: white;
 }
+hr {
+    color: gray;
+}
 /*estilos del main*/
 .introduction {
     padding-top: 2.5em; 
     padding-bottom: 1.78em;
 }
+.introduction-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 h1 {
-    margin: 0.36em 12.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.36em 0;
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     letter-spacing: -0.4px;
-    width: 20em;
+    width: 45%;
 }
 
 .introduction-actions {
@@ -63,7 +86,6 @@ h1 {
 }
 .botonContacto {
     color: #201B24; 
-    width: 11em;
 }
 
 .botonSumate{
@@ -74,4 +96,44 @@ h1 {
 .botonSumate:hover{
     background-color: #6b53f0;
     color: white;
+}
+
+/* media querys*/
+@media screen and (max-width:800px){
+.header {
+    justify-content: space-around;
+}
+}
+@media screen and (min-width:2000px){
+p{
+    font-size: 0.6em;
+}
+.redondo{
+    font-size: 0.6em;
+}
+}
+@media screen and (min-width:2600px){
+    body{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:3000px){
+    body{
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:3300px){
+    body{
+        font-size: 40px;
+    }
+}
+@media screen and (min-width:3800px){
+    body{
+        font-size: 50px;
+    }
+}
+@media screen and (min-width:4700px){
+    body{
+        font-size: 60px;
+    }
 }
